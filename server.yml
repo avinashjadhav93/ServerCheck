@@ -1,8 +1,0 @@
----
- - hosts: all
-   tasks:
-
-   - name: Centralized Server Availability Check
-     script: /etc/ansible/healthserver.sh
-     register: shell
-   - debug: msg="{{shell.stdout_lines}}"
